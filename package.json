@@ -1,0 +1,30 @@
+{
+  "name": "test-map3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docco": "docco index.js",
+    "start": "st -nc & watchify index.js -d -o bundle.js",
+    "build": "browserify index.js > bundle.js"
+  },
+  "author": "Olivier Guiter",
+  "license": "ISC",
+  "dependencies": {
+    "chroniton": "^1.1.0",
+    "docco": "^0.6.3",
+    "d3": "^3.5.3",
+    "@mapbox/togeojson": "^0.16.0",
+    "geojson-length": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oguiter/test-map3d.git"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^8.1.1",
+    "st": "^0.5.2",
+    "watchify": "^2.2.1"
+  }
+}
